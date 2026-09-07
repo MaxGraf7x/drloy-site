@@ -279,3 +279,26 @@ iframe.map { width: 100%; height: 320px; }
 }
 .toolbar button.on { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
 .quiz .form { gap: 0.6rem; }
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+.gallery figure { margin: 0; }
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.gallery figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
